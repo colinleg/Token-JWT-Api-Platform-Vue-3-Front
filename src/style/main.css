@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+
+/* @tailwind './myColors.js'; */
+
+@tailwind utilities;
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.dark {
+    body {
+        /* correspond à myDark-200  */
+        background-color: #1D1F20;
+    }
+}
+
+
+/* Apply Components  */
+
+.flex-center {
+    @apply flex justify-center items-center;
+}
+
+.flex-col-center {
+    @apply flex flex-col justify-center items-center;
+}
+
+.bg-white-dark {
+    @apply bg-myWhite dark:bg-myDark-200;
+}
+
+.bg-white-dark-400 {
+    @apply bg-myWhite dark:bg-myDark-400;
+}
+
+.text-h2 {
+    @apply text-center text-2xl my-8 font-beVietnam6 dark:text-white;
+}
+
+.transition-500 {
+    @apply transition duration-500;
+}
+
+.transition-200 {
+    @apply transition duration-200;
+}
+
+.transition-1000 {
+    @apply transition duration-1000;
+}
+
+.text-p {
+    @apply text-justify text-lg font-beVietnam4;
+}
+
+
+/* #region Fonts */
+
+@font-face {
+    font-family: "beVietnam1";
+    src: url("../assets/fonts/BeVietnam-Thin.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "beVietnam2";
+    src: url("../assets/fonts/BeVietnam-Light.ttf") format('truetype');
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "beVietnam3";
+    src: url("../assets/fonts/BeVietnam-Regular.ttf") format('truetype');
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "beVietnam4";
+    src: url("../assets/fonts/BeVietnam-Medium.ttf") format('truetype');
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "beVietnam5";
+    src: url("../assets/fonts/BeVietnam-SemiBold.ttf") format('truetype');
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "beVietnam6";
+    src: url("../assets/fonts/BeVietnam-Bold.ttf") format('truetype');
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "beVietnam7";
+    src: url("../assets/fonts/BeVietnam-ExtraBold.ttf") format('truetype');
+    font-weight: bolder;
+}
+
+
+/* #endregion */
